@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block header %}
+
+    <header id="header">
+    <div class="logo"></div>
+  
+   <li><a href="/" class="absolute">Αρχική</a></li>
+   </header>
+   <nav id="navigation">
+    <ul>
+      <li><a href="/works/" class="works">Έργα</a></li>
+      <li><a href="/contact/" class="contact">Επικοινωνία</a></li>
+      <li><a href="/who_we_are/" class="airleft">Συστάσεις</a></li>
+      <li><a href="/">Αρχική</a></li>
+    </ul>
+   </nav>     
+ 
+{% endblock %}
+
+{% block content_one %}
+ 
+{% endblock %}
+
+{% block content_two %}
+<div class='tria'>
+
+  <h3 class="header_color">Τα έργα μας</h3>
+  <div class="ena">
+    <a href="http://e-sfragida.gr" target="_blank"><img src="/static/images/e-sfragida.png"></a>
+    <p>Ιστοσελίδα για παραγγελία-αγορά σφραγίδων.</p>
+  </div>
+ 
+
+  <div class="dio">
+    <a href="http://e-xartopolio.gr" target="_blank"><img src="/static/images/e-xartopolio.png"></a>
+    <p>Δυναμική ιστοσελίδα φτιαγμένη με WordPress.</p>
+  </div>
+
+   <div class="exi">
+     <a href="http://englishbooks-thalassa.rhcloud.com/" target="_blank"><img src="/static/images/englishbooks-thalassa.png"></a>
+     <p>Μία εφαρμογή βασισμένη σε node.js και mongo.db.</p>
+  </div> 
+
+  <div class="pente">
+    <a href="http://sitedesigns.gr" target="_blank"><img src="/static/images/sd_favicon.png"></a>
+    <p>Η δική μας ιστοσελίδα, φυσικά δυναμική με δικό μας σύστημα διαχείρισης περιεχομένου (CMS), βασισμένη στο django ένα web framework σε python.</p>
+  </div> 
+
+</div>   
+{% endblock %}      
+

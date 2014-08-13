@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block header %}
+
+    <header id="header">
+    <div class="logo"></div>
+  
+   <li><a href="/" class="absolute">Αρχική</a></li>
+   </header>
+   <nav id="navigation">
+    <ul>
+      <li><a href="/works/" class="works">Έργα</a></li>
+      <li><a href="/contact/" class="contact">Επικοινωνία</a></li>
+      <li><a href="/who_we_are/" class="airleft">Συστάσεις</a></li>
+      <li><a href="/">Αρχική</a></li>
+    </ul>
+   </nav>     
+ 
+{% endblock %}
+
+{% block content_one %}
+ 
+{% endblock %}
+
+{% block content_two %}
+<div>
+  <h3 class="header_color">{{ s.3.title }}</h3>
+  <div class="multi_colums">{{ s.3.text|safe }}</div>
+</div>    
+{% endblock %}      
+

@@ -1,0 +1,69 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Σχεδιασμός σύγχρονων ιστοσελίδων.">
+  <meta name="keywords" content="web, design, development,  responsive" >
+  <meta name="author" content="Spyros D.C.>" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Site Designs</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=latin,greek' rel='stylesheet' type='text/css'>
+  <link href="/static/images/favicon.ico" rel="icon" type="image/x-icon">
+  <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <meta name="google-site-verification" content="iXpe3gA0EuULCTcSbbM8UrdYQ50VdZO7EauYBl_GaW0" >
+  <link href="{{ STATIC_URL }}css/main.css" rel="stylesheet" type="text/css">
+  <!--[if lt IE 9]>
+     <script src="{{ STATIC_URL }}js/html5shiv.js"></script>
+     <script src="{{ STATIC_URL }}js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body {{ class|safe }}>
+  
+  {% block header %}
+  
+  {% endblock %}
+
+  <section id="content_one">
+    
+    {% block content_one %}
+
+    {% endblock %}
+    
+  </section>
+  <section id="content_two">
+    
+    {% block content_two %}
+
+    {% endblock %}
+    
+  </section>
+  <section id="content_three">
+    
+    {% block content_three %}
+
+    {% endblock %}
+    
+  </section>
+  <nav id="navigation_mobile">
+    <ul id = "air_left">
+      <li><a href="/contact/" class="contact" >Επικοινωνία</a></li>
+      <li><a href="/who_we_are/" class="airleft who_we_are">Συστάσεις</a></li>
+      <li><a href="/works/" class="works">Έργα</a></li>
+    </ul>
+  </nav>
+  <footer id="footer">
+    <div class="air_footer">
+      <div class="left">
+        <p>
+          Designed by</br>Powered by Django
+        </p>
+      </div>
+      <div class="left1">
+        <img src="/static/images/logo-color1-small.gif">
+      </div>
+    </div>
+  </footer>
+<script src="{{ STATIC_URL }}js/firstscript.js"></script>
+</body>
+</html>

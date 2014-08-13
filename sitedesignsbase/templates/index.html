@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block header %}
+ <header id="header">
+  <div class="logo"></div>
+  
+  <li><a href="#navigation_mobile" class="absolute">Menu</a></li>
+  
+ </header>
+  <nav id="navigation">
+    <ul>
+      <li><a href="/works/" class="works">Έργα</a></li>
+      <li><a href="/contact/" class="contact">Επικοινωνία</a></li>
+      <li><a href="/who_we_are/" class="airleft">Συστάσεις</a></li>
+    </ul>
+  </nav>     
+{% endblock %}
+
+{% block content_one %}
+  
+  <div id="banner">
+    <h2 class="main_color text_center">Σχεδιάζουμε σύγχρονες ιστοσελίδες</h2>
+    <div class="tabs">
+      <ul>
+          <li><a href="#panel1" id="one">ΑΠΛΕΣ</a></li>
+          <li><a href="#panel2" id="two">ΟΜΟΡΦΕΣ</a></li>
+          <li><a href="#panel3" id="three">ΛΕΙΤΟΥΡΓΙΚΕΣ</a></li>
+      </ul>
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block content_two %}
+  
+  <div class="panel" id="panel1">
+    <h3 class="header_color">{{ s.0.title }}</h3>
+    <div class="multi_colums">{{ s.0.text|safe }}</div>   
+    <div class="air">
+      <img src="/static/images/google7.gif" class="center_tab">
+    </div>
+  </div>
+  <div class="panel" id="panel2">
+    <h3 class="header_color2">{{s.1.title}}</h3>
+    <p class="multi_colums">{{s.1.text|safe}}</p>   
+    <div class="air">
+      <img src="/static/images/ZenGarden1.jpg" class="center_tab">
+    </div>
+  </div>
+  <div class="panel" id="panel3">
+    <h3 class="header_color3">{{s.4.title}}</h3>
+    <p class="multi_colums">{{s.4.text|safe}}</p>   
+    <div class="air">
+      <img src="/static/images/responsive-design-hero.jpg" class="center_tab">
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block content_three %}
+  <h2 class="header_color">More about us</h2>
+  <div class="cont_one">
+    <p>
+      <h3 class="header_color">{{s.5.title}}</h3>
+      {{s.5.text|safe}}
+    </p>
+  </div>
+  <div class="cont_two">
+    <p>
+      <h3 class="header_color">{{s.6.title}}</h3>
+      {{s.6.text|safe}}
+    </p>
+  </div>
+
+{% endblock %}

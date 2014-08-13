@@ -1,0 +1,15 @@
+.works_emphasis li a {
+  color: rgb(230,135,135);
+}
+.works_emphasis .works {
+  color: rgb(204,51,51);
+}
+.works_emphasis #content_three {
+  display: none;
+}
+
+//proto-teleytaio
+<li><a href="/works/" class="works">Έργα</a></li>
+
+
+<h3 class="header_color">Τα έργα μας</h3>
